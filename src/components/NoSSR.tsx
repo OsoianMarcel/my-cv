@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import {useState, useEffect} from 'react';
 
 type Props = {
 	children: ReactNode,
@@ -6,9 +7,15 @@ type Props = {
 }
 
 export default function NoSSR({children, onSSR = '\u00A0'} : Props): JSX.Element {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
 	return (
 		<>
-			{typeof window !== 'undefined' ? children : onSSR}
+			{isClient ? children : onSSR}
 		</>
 	);
 }
