@@ -1,0 +1,18 @@
+.main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  border-top: 2px solid #DDD;
+}
+
+.aside {
+  padding-right: 50px;
+  border-right: 2px solid #DDD;
+}
+
+.content {
+  padding-left: 50px;
+}
+
+.aside, .content {
+  padding-top: 40px;
+}

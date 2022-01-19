@@ -1,69 +1,78 @@
 import type {NextPage} from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
+
+import NoSSR from '../components/NoSSR';
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import AsideDetail from '../components/AsideDetail';
+import ProgressBar from '../components/ProgressBar';
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.container}>
+		<Layout>
+
 			<Head>
-				<title>Homepage</title>
+				<title>Osoian Marcel — CV</title>
 			</Head>
 
 			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Welcome to <a href="https://nextjs.org">Next.js!</a>
-				</h1>
+				<aside className={styles.aside}>
+					<Section title="Details">
+						<AsideDetail title="Address">
+							<p>
+								Chisinau<br/>
+								Moldova
+							</p>
+						</AsideDetail>
 
-				<p className={styles.description}>
-					Get started by editing{' '}
-					<code className={styles.code}>pages/index.tsx</code>
-				</p>
+						<AsideDetail title="Email">
+							<p><NoSSR>osoian.marcel.d@gmail.com</NoSSR></p>
+						</AsideDetail>
 
-				<div className={styles.grid}>
-					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h2>Documentation &rarr;</h2>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
+						<AsideDetail title="Phone">
+							<p>+373-791-25-905</p>
+						</AsideDetail>
 
-					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h2>Learn &rarr;</h2>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
+						<AsideDetail title="Github">
+							<p>
+								<a href="https://github.com/OsoianMarcel?tab=repositories"
+								   target="_blank"
+								   rel="noreferrer">
+									OsoianMarcel
+								</a>
+							</p>
+						</AsideDetail>
+					</Section>
 
-					<a
-						href="https://github.com/vercel/next.js/tree/canary/examples"
-						className={styles.card}
-					>
-						<h2>Examples &rarr;</h2>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
+					<Section title="Skills">
+						Back End
+						<ProgressBar val="10"/>
+						<br/>
 
-					<a
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}
-					>
-						<h2>Deploy &rarr;</h2>
+						Front End
+						<ProgressBar val="7"/>
+						<br/>
+
+						DevOps
+						<ProgressBar val="6"/>
+					</Section>
+				</aside>
+				<section className={styles.content}>
+					<Section title="Profile">
 						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
+							My name is Marcel and I am a web developer currently living in Chisinau, Republic of Moldova.
+							I have over 10 years of professional working experience. In this time, I had the
+							opportunity in achieving different knowledges in the IT sphere, starting with web
+							technologies, desktop and mobile applications to even hardware products.
 						</p>
-					</a>
-				</div>
+					</Section>
+					<Section title="Employment history">
+						Wiii
+					</Section>
+				</section>
 			</main>
-
-			<footer className={styles.footer}>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Powered by{' '}
-					<span className={styles.logo}>
-						<Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
-					</span>
-				</a>
-			</footer>
-		</div>
+		</Layout>
 	);
 };
 
