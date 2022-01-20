@@ -16,3 +16,48 @@
 .aside, .content {
   padding-top: 40px;
 }
+
+.skill_section {
+  margin-bottom: 20px;
+}
+
+.skill_name {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.skill_list {
+  color: #222;
+  font-size: 12px;
+}
+
+.lang_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted #777;
+  margin-bottom: 10px;
+}
+
+.lang_name {
+  color: #222;
+}
+
+.lang_level {
+  font-size: 12px;
+}
+
+.empl_skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 35px;
+  font-size: 12px;
+}
+
+.empl_skill {
+  display: inline-block;
+  border: 1px solid #777;
+  padding: 2px;
+}

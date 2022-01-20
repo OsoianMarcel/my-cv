@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 35px;
+  font-size: 12px;
+}
+
+.item {
+  display: inline-block;
+  border: 1px solid #777;
+  padding: 2px;
+}
+
+.link {
+  text-decoration: none;
+}

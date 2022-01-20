@@ -1,8 +1,22 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 43px;
 }
 
+.left {
+
+}
+
+.right {
+  font-size: 135px;
+  font-weight: 500;
+  color: #EEE;
+}
+
 .name {
+  color: #222;
   font-size: 60px;
   font-weight: 600;
   letter-spacing: 5px;
@@ -16,5 +30,4 @@
   letter-spacing: 2px;
   font-weight: 400;
   margin: 0;
-  color: #888;
 }

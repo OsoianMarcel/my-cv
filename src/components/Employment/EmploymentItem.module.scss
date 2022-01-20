@@ -1,0 +1,25 @@
+.container {
+  margin-bottom: 30px;
+}
+
+.position_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.position_name {
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.position_company {
+  color: #777;
+}
+
+.position_period {
+  color: #777;
+  margin-bottom: 20px;
+}
