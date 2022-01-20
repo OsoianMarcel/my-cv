@@ -7,7 +7,7 @@ type Props = {
 	company: string,
 	periodFrom: string,
 	periodTo: string,
-	children: ReactNode
+	children?: ReactNode
 }
 
 export default function EmploymentItem({position, company, periodFrom, periodTo, children} : Props): JSX.Element {

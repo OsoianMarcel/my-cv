@@ -16,6 +16,8 @@ const Home: NextPage = () => {
 
 			<Head>
 				<title>Osoian Marcel — CV</title>
+				<meta name="description" content="Curriculum vitae of Osoian Marcel"/>
+				<meta name="author" content="Osoian Marcel"/>
 			</Head>
 
 			<main className={styles.main}>
@@ -114,8 +116,6 @@ const Home: NextPage = () => {
 							Full-stack web engineer with 10+ years of professional working experience.
 							I had the opportunity in achieving different knowledges in the IT sphere,
 							starting with web technologies, desktop and mobile applications to even hardware products.
-							{/*For the last 4 years I have developed several decentralized applications*/}
-							{/*on Ethereum and xDAI networks and I am interested to */}
 						</p>
 					</Section>
 					<Section title="Experience">
@@ -127,7 +127,8 @@ const Home: NextPage = () => {
 						>
 							<ul>
 								<li>
-									Developed from scratch 3 decentralized applications based on Ethereum blockchain:
+									Architected and developed from scratch 3 decentralized
+									applications based on Ethereum blockchain:
 								</li>
 								<li>
 									ethermium.com - decentralized cryptocurrency exchange.
@@ -222,6 +223,10 @@ const Home: NextPage = () => {
 								'ExtJS & Touch', 'SysAdmin', 'Raspberry PI'
 							]}/>
 						</EmploymentItem>
+					</Section>
+
+					<Section title="Education">
+						<EmploymentItem position="Civil Law" company="Technical University of Moldova" periodFrom="2009" periodTo="2013"/>
 					</Section>
 				</section>
 			</main>
