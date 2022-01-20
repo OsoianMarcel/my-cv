@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import useDetectPrint from '../../hooks/useDetectPrint';
 
 import styles from './Skills.module.scss';
 
@@ -9,8 +10,9 @@ type Props = {
 
 export default function Skill({skills, limit = 10}: Props): JSX.Element {
 	const [showAll, setShowAll] = useState(false);
+	const isPrinting = useDetectPrint();
 
-	const skillsToDisplay = showAll ? skills : skills.slice(0, limit);
+	const skillsToDisplay = showAll || isPrinting ? skills : skills.slice(0, limit);
 
 	const onClick = () => {
 		setShowAll(ps => !ps);
@@ -21,13 +23,12 @@ export default function Skill({skills, limit = 10}: Props): JSX.Element {
 			{skillsToDisplay.map((skill, key) => {
 				return <span key={key} className={styles.item}>{skill}</span>;
 			})}
-			{skills.length > limit && <a
-				href="javascript:void(0);"
+			{skills.length > limit && !isPrinting && <button
 				onClick={onClick}
-				className={styles.link}
+				className={styles.btn}
 			>
 				{showAll ? '<less' : 'more>'}
-			</a>}
+			</button>}
 		</div>
 	);
 }
