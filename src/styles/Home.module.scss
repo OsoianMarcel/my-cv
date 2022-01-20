@@ -61,3 +61,16 @@
   border: 1px solid #777;
   padding: 2px;
 }
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .aside {
+    padding-right: 0;
+    border-right: none;
+  }
+  .content {
+    padding-left: 0;
+  }
+}

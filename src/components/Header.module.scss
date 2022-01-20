@@ -31,3 +31,9 @@
   font-weight: 400;
   margin: 0;
 }
+
+@media (max-width: 550px) {
+  .right {
+    display: none;
+  }
+}

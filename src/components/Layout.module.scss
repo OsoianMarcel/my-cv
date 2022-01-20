@@ -5,3 +5,11 @@
   background-color: #FFF;
   border: 1px solid #A0A0A0;
 }
+
+@media (max-width: 800px), print {
+  .container {
+    margin: 0 auto;
+    border: none;
+    padding: 25px;
+  }
+}

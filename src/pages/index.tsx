@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 								<a href="https://github.com/OsoianMarcel?tab=repositories"
 								   target="_blank"
 								   rel="noreferrer">
-									OsoianMarcel
+									github.com/OsoianMarcel
 								</a>
 							</p>
 						</AsideDetail>
@@ -127,7 +127,6 @@ const Home: NextPage = () => {
 						>
 							<ul>
 								<li>
-									Worked as full-stack web engineer and sys-admin in the company.
 									Developed from scratch 3 decentralized applications based on Ethereum blockchain:
 								</li>
 								<li>
