@@ -137,6 +137,7 @@ const Home: NextPage = () => {
 									- criptoleu.com - national cryptocurrency and payment system.
 								</li>
 								<li>Writing API endpoints and API documentation.</li>
+								<li>Architected order matching system.</li>
 								<li>Smart Contract analysis and integration on back-end.</li>
 								<li>Maintaining servers software (web servers, databases, eth nodes, etc).</li>
 								<li>Horizontal scaling of Node.js and back-end optimizations.</li>
