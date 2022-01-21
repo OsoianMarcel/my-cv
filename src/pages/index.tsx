@@ -128,23 +128,18 @@ const Home: NextPage = () => {
 							<ul>
 								<li>
 									Architected and developed from scratch 3 decentralized
-									applications based on Ethereum blockchain:
-								</li>
-								<li>
-									ethermium.com - decentralized cryptocurrency exchange.
-								</li>
-								<li>
-									dmex.app - decentralized exchange for margin trading.
-								</li>
-								<li>
-									criptoleu.com - national cryptocurrency and payment system.
+									applications based on Ethereum blockchain:<br/>
+									- ethermium.com - decentralized cryptocurrency exchange;<br/>
+									- dmex.app - decentralized exchange for margin trading;<br/>
+									- criptoleu.com - national cryptocurrency and payment system.
 								</li>
 							</ul>
 							<Skills limit={8} skills={[
 								'JavaScript', 'Node.js', 'Express', 'Socket.IO', 'Sequelize',
-								'Solidity', 'Web3', 'Geth', 'Openethereum', 'Metamask',
+								'Solidity', 'Web3', 'Geth', 'Openethereum', 'Vue.js', 'Metamask',
 								'MySQL', 'Postgres', 'Redis', 'RabbitMQ', 'Consul', 'Minio',
-								'Nginx', 'Apache2', 'Ubuntu SysAdmin', 'Docker', 'Letsencrypt'
+								'Nginx', 'Apache2', 'Ubuntu SysAdmin', 'Docker', 'Letsencrypt',
+								'Prometheus', 'Grafana'
 							]}/>
 						</EmploymentItem>
 
@@ -161,8 +156,8 @@ const Home: NextPage = () => {
 								<li>
 									Main projects:<br/>
 									- Developed the Front-end of website BtcXChange.ro and their backoffice,
-									implemented new design and new features.<br/>
-									- Continued to develop avigo.md software and maintain their servers.<br/>
+									implemented new design and new features;<br/>
+									- Continued to develop avigo.md software and maintain their servers;<br/>
 									- Developed another different small projects with my team.
 								</li>
 							</ul>

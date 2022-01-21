@@ -45,7 +45,9 @@ li {
   body {
     background-color: #FFF;
   }
+}
 
+@media print {
   a {
     text-decoration: none;
   }
