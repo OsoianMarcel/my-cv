@@ -5,7 +5,7 @@ type Props = {
 	val: number|string
 }
 
-export default function Title({max = 10, val} : Props): JSX.Element {
+export default function Title({max = 100, val} : Props): JSX.Element {
 	if (typeof max !== 'number') {
 		max = parseInt(max, 10);
 	}

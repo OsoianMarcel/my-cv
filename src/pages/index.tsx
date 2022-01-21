@@ -60,7 +60,7 @@ const Home: NextPage = () => {
 					<Section title="Skills">
 						<div className={styles.skill_section}>
 							<div className={styles.skill_name}>Back End</div>
-							<ProgressBar val="10"/>
+							<ProgressBar val="100"/>
 							<ul className={styles.skill_list}>
 								<li>Node.js, Express, Socket.IO, Sequelize</li>
 								<li>PHP, Symfony, Doctrine</li>
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
 
 						<div className={styles.skill_section}>
 							<div className={styles.skill_name}>Front End</div>
-							<ProgressBar val="8"/>
+							<ProgressBar val="80"/>
 							<ul className={styles.skill_list}>
 								<li>HTML5, CSS3, JavaScript ES6</li>
 								<li>React, Next.js, Vue.js</li>
@@ -82,11 +82,12 @@ const Home: NextPage = () => {
 
 						<div className={styles.skill_section}>
 							<div className={styles.skill_name}>Blockchain</div>
-							<ProgressBar val="9"/>
+							<ProgressBar val="95"/>
 							<ul className={styles.skill_list}>
+								<li>Ethereum Blockchain</li>
 								<li>Web3, Ethers, BigNumber</li>
 								<li>Solidity, Truffle</li>
-								<li>Geth, OpenEthereum, MetaMask</li>
+								<li>MetaMask, Geth, OpenEthereum</li>
 							</ul>
 						</div>
 					</Section>
@@ -115,7 +116,9 @@ const Home: NextPage = () => {
 						<p>
 							Full-stack web engineer with 10+ years of professional working experience.
 							I had the opportunity in achieving different knowledges in the IT sphere,
-							starting with web technologies, desktop and mobile applications to even hardware products.
+							starting with web technologies, desktop and mobile applications to even hardware products.<br/>
+							In last 4 years I achieved big experience with creating decentralized applications,
+							where most of them were built using Ethereum Blockchain.
 						</p>
 					</Section>
 					<Section title="Experience">
@@ -127,12 +130,18 @@ const Home: NextPage = () => {
 						>
 							<ul>
 								<li>
-									Architected and developed from scratch 3 decentralized
+									Architected and developed from scratch the back-end of 3 decentralized
 									applications based on Ethereum blockchain:<br/>
 									- ethermium.com - decentralized cryptocurrency exchange;<br/>
 									- dmex.app - decentralized exchange for margin trading;<br/>
 									- criptoleu.com - national cryptocurrency and payment system.
 								</li>
+								<li>Writing API endpoints and API documentation.</li>
+								<li>Smart Contract analysis and integration on back-end.</li>
+								<li>Maintaining servers software (web servers, databases, eth nodes, etc).</li>
+								<li>Horizontal scaling of Node.js and back-end optimizations.</li>
+								<li>Prometheus and Grafana metrics integration.</li>
+								<li>Frontend development with Vue.js &amp; Vuex.</li>
 							</ul>
 							<Skills limit={8} skills={[
 								'JavaScript', 'Node.js', 'Express', 'Socket.IO', 'Sequelize',
@@ -150,20 +159,18 @@ const Home: NextPage = () => {
 							periodTo="Mar 2018"
 						>
 							<ul>
-								<li>Company administration.</li>
-								<li>Hiring software developers.</li>
-								<li>Project management.</li>
+								<li>Company administration, hiring software developers, project management.</li>
 								<li>
 									Main projects:<br/>
 									- Developed the Front-end of website BtcXChange.ro and their backoffice,
-									implemented new design and new features;<br/>
+									implemented new design and features;<br/>
 									- Continued to develop avigo.md software and maintain their servers;<br/>
-									- Developed another different small projects with my team.
+									- Developed another projects with my team as Tech Lead.
 								</li>
 							</ul>
 							<Skills skills={[
 								'PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript',
-								'Ubuntu SysAdmin', 'Docker'
+								'Ubuntu SysAdmin', 'Docker', 'YouTrack'
 							]}/>
 						</EmploymentItem>
 
