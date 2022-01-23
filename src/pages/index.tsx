@@ -25,8 +25,8 @@ const Home: NextPage = () => {
 					<Section title="Details">
 						<AsideDetail title="Address">
 							<p>
-								Chisinau<br/>
-								Moldova
+								Chisinau,<br/>
+								Republic of Moldova
 							</p>
 						</AsideDetail>
 

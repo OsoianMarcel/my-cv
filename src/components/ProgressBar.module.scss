@@ -8,6 +8,20 @@
   background-color: #DADADA;
 }
 
+.progress_wrapper {
+  animation: progress-anim 1s ease-in-out forwards;
+}
+
 .progress {
   background-color: #222;
+}
+
+@keyframes progress-anim {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }

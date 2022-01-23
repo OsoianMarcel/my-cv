@@ -22,7 +22,9 @@ export default function Title({max = 100, val} : Props): JSX.Element {
 
 	return (
 		<div className={styles.bar}>
-			<div className={styles.progress} style={{width}}>&nbsp;</div>
+			<div className={styles.progress_wrapper}>
+				<div className={styles.progress} style={{width}}>&nbsp;</div>
+			</div>
 		</div>
 	);
 }
