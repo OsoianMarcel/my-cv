@@ -20,4 +20,9 @@
   background-color: #FFF;
   color: #777;
   cursor: pointer;
+  transition: color 300ms ease;
+
+  &:hover {
+    color: #222;
+  }
 }
