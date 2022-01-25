@@ -11,13 +11,51 @@ import EmploymentItem from '../components/Employment/EmploymentItem';
 import Skills from '../components/Skills/Skills';
 
 const Home: NextPage = () => {
+	const title = 'Osoian Marcel — CV';
+	const description = 'Curriculum vitae of Osoian Marcel (Fullstack Web Developer)';
+
 	return (
 		<Layout>
 
 			<Head>
-				<title>Osoian Marcel — CV</title>
-				<meta name="description" content="Curriculum vitae of Osoian Marcel"/>
+				<title>{title}</title>
+				<meta name="description" content={description}/>
 				<meta name="author" content="Osoian Marcel"/>
+
+				<meta property="og:type" content="website"/>
+				<meta property="og:title" content={title}/>
+				<meta property="og:description" content={description}/>
+				<meta property="og:site_name" content="Curriculum vitae of Osoian Marcel"/>
+				<meta property="og:locale" content="en"/>
+				<meta property="og:url" content="https://marcel.osoian.com"/>
+				<meta property="og:image" content="https://marcel.osoian.com/og-image.png"/>
+				<meta property="og:image:type" content="image/png"/>
+				<meta property="og:image:width" content="1078"/>
+				<meta property="og:image:height" content="630"/>
+				<meta property="og:image:alt" content="Curriculum vitae of Osoian Marcel"/>
+
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(
+							{
+								'@context': 'https://schema.org/',
+								'@type': 'Person',
+								'name': 'Osoian Marcel',
+								'url': 'https://marcel.osoian.com',
+								'image': 'https://marcel.osoian.com/photo-of-me.jpg',
+								'sameAs': [
+									'https://github.com/OsoianMarcel',
+									'https://www.linkedin.com/in/osoian-marcel/',
+									'https://www.facebook.com/marcel.osoian',
+									'https://www.instagram.com/osoian.marcel/',
+									'https://twitter.com/OsoianMarcel'
+								],
+								'jobTitle': 'Fullstack Web Developer'
+							}
+						)
+					}}
+				/>
 			</Head>
 
 			<main className={styles.main}>
@@ -116,7 +154,8 @@ const Home: NextPage = () => {
 						<p>
 							Full-stack web engineer with 10+ years of professional working experience.
 							I had the opportunity in achieving different knowledges in the IT sphere,
-							starting with web technologies, desktop and mobile applications to even hardware products.<br/>
+							starting with web technologies, desktop and mobile applications to even hardware
+							products.<br/>
 							In last 4 years I achieved big experience with creating decentralized applications,
 							where most of them were built using Ethereum Blockchain.
 						</p>
@@ -229,7 +268,8 @@ const Home: NextPage = () => {
 					</Section>
 
 					<Section title="Education">
-						<EmploymentItem position="Civil Law" company="Technical University of Moldova" periodFrom="2009" periodTo="2013"/>
+						<EmploymentItem position="Civil Law" company="Technical University of Moldova" periodFrom="2009"
+						                periodTo="2013"/>
 					</Section>
 				</section>
 			</main>
