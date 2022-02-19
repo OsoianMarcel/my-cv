@@ -11,7 +11,7 @@ import EmploymentItem from '../components/Employment/EmploymentItem';
 import Skills from '../components/Skills/Skills';
 
 const Home: NextPage = () => {
-	const title = 'Osoian Marcel — CV';
+	const title = 'Osoian Marcel — Full-stack Web Developer';
 	const description = 'Curriculum vitae of Osoian Marcel (Fullstack Web Developer)';
 
 	return (
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
 							<div className={styles.skill_name}>Front End</div>
 							<ProgressBar val="80"/>
 							<ul className={styles.skill_list}>
-								<li>HTML5, CSS3, JavaScript ES6</li>
+								<li>HTML5, CSS3, JavaScript ES6, TypeScript</li>
 								<li>React, Next.js, Vue.js</li>
 								<li>Frontend optimization, Technical SEO</li>
 							</ul>

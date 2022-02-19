@@ -20,20 +20,26 @@
   color: #222;
   font-size: 60px;
   font-weight: 600;
-  letter-spacing: 5px;
-  line-height: 67px;
+  letter-spacing: 3px;
+  line-height: 1.1;
   margin: 0 0 15px;
 }
 
 .occupation {
   font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 2px;
+  line-height: 1.2;
+  letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
 }
 
 @media (max-width: 550px) {
+  .header {
+    margin-bottom: 20px;
+  }
+  .name, .occupation {
+    letter-spacing: 0;
+  }
   .right {
     display: none;
   }
