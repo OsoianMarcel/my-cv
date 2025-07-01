@@ -1,0 +1,8 @@
+services:
+  marcel-app:
+    build:
+      target: dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/home/node/app

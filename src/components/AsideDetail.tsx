@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type {ReactElement, ReactNode} from 'react';
 
 import SubTitle from './SubTitle';
 
@@ -9,7 +9,7 @@ type Props = {
 	children: ReactNode
 }
 
-export default function AsideDetails({title, children} : Props): JSX.Element {
+export default function AsideDetails({title, children} : Props): ReactElement {
 	return (
 		<div className={styles.aside_detail}>
 			<SubTitle name={title}/>

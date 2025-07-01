@@ -1,5 +1,7 @@
-import {useState} from 'react';
-import useDetectPrint from '../../hooks/useDetectPrint';
+'use client';
+
+import {ReactElement, useState} from 'react';
+import useDetectPrint from '@/hooks/useDetectPrint'
 
 import styles from './Skills.module.scss';
 
@@ -8,7 +10,7 @@ type Props = {
 	limit?: number
 }
 
-export default function Skill({skills, limit = 10}: Props): JSX.Element {
+export default function Skill({skills, limit = 10}: Props): ReactElement {
 	const [showAll, setShowAll] = useState(false);
 	const isPrinting = useDetectPrint();
 

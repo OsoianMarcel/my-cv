@@ -1,4 +1,6 @@
-import type {ReactNode} from 'react';
+'use client';
+
+import type {ReactElement, ReactNode} from 'react';
 import {useState, useEffect} from 'react';
 
 type Props = {
@@ -6,7 +8,7 @@ type Props = {
 	onSSR?: ReactNode
 }
 
-export default function NoSSR({children, onSSR = '\u00A0'} : Props): JSX.Element {
+export default function NoSSR({children, onSSR = '\u00A0'} : Props): ReactElement {
 	const [isClient, setIsClient] = useState(false);
 
 	useEffect(() => {

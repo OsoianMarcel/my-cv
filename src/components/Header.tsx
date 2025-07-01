@@ -1,6 +1,7 @@
+import { ReactElement } from 'react';
 import styles from './Header.module.scss';
 
-export default function Header(): JSX.Element {
+export default function Header(): ReactElement {
 	return (
 		<header className={styles.header}>
 			<div className={styles.left}>

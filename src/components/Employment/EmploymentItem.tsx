@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type {ReactElement, ReactNode} from 'react';
 
 import styles from './EmploymentItem.module.scss';
 
@@ -10,7 +10,7 @@ type Props = {
 	children?: ReactNode
 }
 
-export default function EmploymentItem({position, company, periodFrom, periodTo, children} : Props): JSX.Element {
+export default function EmploymentItem({position, company, periodFrom, periodTo, children} : Props): ReactElement {
 	return (
 		<div className={styles.container}>
 			<div className={styles.position_container}>

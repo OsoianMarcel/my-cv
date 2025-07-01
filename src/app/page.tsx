@@ -1,6 +1,6 @@
 import type {NextPage} from 'next';
 import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
+import styles from './page.module.scss';
 
 import NoSSR from '../components/NoSSR';
 import Layout from '../components/Layout';
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
 						<AsideDetail title="Email">
 							<p>
 								<NoSSR>
-									<a href="mailto:osoian.marcel.d@gmail.com">osoian.marcel.d@gmail.com</a>
+									<a href="mailto:marcel@osoian.com">marcel@osoian.com</a>
 								</NoSSR>
 							</p>
 						</AsideDetail>

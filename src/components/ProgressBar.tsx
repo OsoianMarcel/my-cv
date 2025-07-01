@@ -1,3 +1,4 @@
+import { ReactElement } from 'react';
 import styles from './ProgressBar.module.scss';
 
 type Props = {
@@ -5,7 +6,7 @@ type Props = {
 	val: number|string
 }
 
-export default function Title({max = 100, val} : Props): JSX.Element {
+export default function ProgressBar({max = 100, val} : Props): ReactElement {
 	if (typeof max !== 'number') {
 		max = parseInt(max, 10);
 	}

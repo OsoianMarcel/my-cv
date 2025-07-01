@@ -1,0 +1,9 @@
+services:
+  marcel-app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    networks:
+      marcel-internal:
+networks:
+  marcel-internal:

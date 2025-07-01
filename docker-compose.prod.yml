@@ -1,0 +1,6 @@
+services:
+  marcel-app:
+    build:
+      target: prod
+    ports:
+      - 8080:80
