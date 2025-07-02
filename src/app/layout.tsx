@@ -9,8 +9,8 @@ const montserratFont = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Osoian Marcel — Full-stack Web Developer',
-	description: 'Curriculum vitae of Osoian Marcel (Fullstack Web Developer)'
+  title: 'Osoian Marcel — Software Engineer',
+	description: 'Curriculum vitae of Osoian Marcel (Software Engineer)'
 };
 
 export default function RootLayout({

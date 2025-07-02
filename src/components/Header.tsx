@@ -9,7 +9,7 @@ export default function Header(): ReactElement {
 					Osoian<br/>
 					Marcel
 				</h1>
-				<h2 className={styles.occupation}>Fullstack Web Developer</h2>
+				<h2 className={styles.occupation}>Software Engineer</h2>
 			</div>
 			<div className={styles.right}>
 				CV
