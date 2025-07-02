@@ -22,6 +22,8 @@ const Home: NextPage = () => {
         <meta name="description" content={description} />
         <meta name="author" content="Osoian Marcel" />
 
+        <link rel="canonical" href="https://marcel.osoian.com" />
+
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -42,28 +44,28 @@ const Home: NextPage = () => {
           property="og:image:alt"
           content="Curriculum vitae of Osoian Marcel"
         />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org/',
-              '@type': 'Person',
-              name: 'Osoian Marcel',
-              url: 'https://marcel.osoian.com',
-              image: 'https://marcel.osoian.com/photo-of-me.jpg',
-              sameAs: [
-                'https://github.com/OsoianMarcel',
-                'https://www.linkedin.com/in/osoian-marcel/',
-                'https://www.facebook.com/marcel.osoian',
-                'https://www.instagram.com/osoian.marcel/',
-                'https://x.com/OsoianMarcel'
-              ],
-              jobTitle: 'Software Engineer'
-            })
-          }}
-        />
       </Head>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org/',
+            '@type': 'Person',
+            name: 'Osoian Marcel',
+            url: 'https://marcel.osoian.com',
+            image: 'https://marcel.osoian.com/photo-of-me.jpg',
+            sameAs: [
+              'https://github.com/OsoianMarcel',
+              'https://www.linkedin.com/in/osoian-marcel/',
+              'https://www.facebook.com/marcel.osoian',
+              'https://www.instagram.com/osoian.marcel/',
+              'https://x.com/OsoianMarcel'
+            ],
+            jobTitle: 'Software Engineer'
+          })
+        }}
+      />
 
       <main className={styles.main}>
         <aside className={styles.aside}>
