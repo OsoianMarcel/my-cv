@@ -1,28 +1,26 @@
-import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
-import "./globals.scss";
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import './globals.scss';
 
 const montserratFont = Montserrat({
-  variable: "--font-montserrat",
+  variable: '--font-montserrat',
   weight: ['400', '500', '600'],
-  subsets: ["latin"],
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
   title: 'Osoian Marcel — Software Engineer',
-	description: 'Curriculum vitae of Osoian Marcel (Software Engineer)'
+  description: 'Curriculum vitae of Osoian Marcel (Software Engineer)'
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserratFont.variable}`}>
-        {children}
-      </body>
+      <body className={`${montserratFont.variable}`}>{children}</body>
     </html>
   );
 }

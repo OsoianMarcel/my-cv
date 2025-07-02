@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           content="https://marcel.osoian.com/og-image.png"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1078" />
+        <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"

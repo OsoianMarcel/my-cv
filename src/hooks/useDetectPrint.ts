@@ -1,22 +1,22 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-const useDetectPrint = () : boolean => {
-	const [isPrinting, setIsPrinting] = useState(false);
+const useDetectPrint = (): boolean => {
+  const [isPrinting, setIsPrinting] = useState(false);
 
-	const handleBeforeprint = () => setIsPrinting(true);
-	const handleAfterprint = () => setIsPrinting(false);
+  const handleBeforeprint = () => setIsPrinting(true);
+  const handleAfterprint = () => setIsPrinting(false);
 
-	useEffect(() => {
-		window.addEventListener('beforeprint', handleBeforeprint);
-		window.addEventListener('afterprint', handleAfterprint);
+  useEffect(() => {
+    window.addEventListener('beforeprint', handleBeforeprint);
+    window.addEventListener('afterprint', handleAfterprint);
 
-		return () => {
-			window.removeEventListener('beforeprint', handleBeforeprint);
-			window.removeEventListener('afterprint', handleAfterprint);
-		};
-	});
+    return () => {
+      window.removeEventListener('beforeprint', handleBeforeprint);
+      window.removeEventListener('afterprint', handleAfterprint);
+    };
+  });
 
-	return isPrinting;
+  return isPrinting;
 };
 
 export default useDetectPrint;

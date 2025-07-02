@@ -6,13 +6,12 @@
 }
 
 .left {
-
 }
 
 .right {
   font-size: 135px;
   font-weight: 500;
-  color: #EEE;
+  color: #eee;
   user-select: none;
 }
 
@@ -37,7 +36,8 @@
   .header {
     margin-bottom: 20px;
   }
-  .name, .occupation {
+  .name,
+  .occupation {
     letter-spacing: 0;
   }
   .right {
