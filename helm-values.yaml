@@ -1,7 +1,3 @@
-image:
-  repository: osoianmarcel/my-cv
-  pullPolicy: IfNotPresent
-  tag: "latest"
 ingress:
   enabled: true
   hosts:
