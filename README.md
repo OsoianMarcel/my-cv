@@ -8,6 +8,8 @@ It is a simple and responsive web application that presents my professional expe
 
 - **Framework:** [Next.js](https://nextjs.org/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Containerization:** [Docker](https://www.docker.com/)
+- **Deployment Tools:** [Helm](https://helm.sh/), [Kubernetes](https://kubernetes.io/)
 
 ## Features
 
