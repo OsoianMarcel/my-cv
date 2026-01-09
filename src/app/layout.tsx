@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
+import { themeScript } from '@/utils/themeScript';
 import './globals.scss';
 
 const montserratFont = Montserrat({
@@ -19,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className={`${montserratFont.variable}`}>{children}</body>
     </html>
   );

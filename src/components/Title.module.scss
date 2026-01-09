@@ -1,5 +1,5 @@
 .title {
-  color: #222;
+  color: var(--text-primary);
   position: relative;
   font-size: 25px;
   font-weight: 600;
@@ -15,6 +15,6 @@
     left: 0;
     width: 45px;
     height: 3px;
-    background-color: #222;
+    background-color: var(--text-primary);
   }
 }

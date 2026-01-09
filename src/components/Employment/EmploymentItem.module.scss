@@ -10,18 +10,18 @@
 }
 
 .position_name {
-  color: #222;
+  color: var(--text-primary);
   font-size: 20px;
   font-weight: 600;
   margin-right: 10px;
 }
 
 .position_company {
-  color: #555;
+  color: var(--text-secondary);
   text-align: right;
 }
 
 .position_period {
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
