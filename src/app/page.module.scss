@@ -1,12 +1,12 @@
 .main {
   display: grid;
   grid-template-columns: 320px 1fr;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid var(--border-container);
 }
 
 .aside {
   padding-right: 50px;
-  border-right: 2px solid #ddd;
+  border-right: 2px solid var(--border-container);
 }
 
 .content {
@@ -23,7 +23,7 @@
 }
 
 .skill_name {
-  color: #222;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
@@ -35,12 +35,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px dotted #555;
+  border-bottom: 1px dotted var(--text-secondary);
   margin-bottom: 10px;
 }
 
 .lang_name {
-  color: #222;
+  color: var(--text-primary);
 }
 
 .lang_level {
@@ -59,7 +59,7 @@
 
 .empl_skill {
   display: inline-block;
-  border: 1px solid #555;
+  border: 1px solid var(--text-secondary);
   padding: 2px;
 }
 
