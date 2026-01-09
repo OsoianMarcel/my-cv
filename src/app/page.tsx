@@ -12,10 +12,26 @@ import content from '../data/content';
 
 const SITE_URL = 'https://marcel.osoian.com';
 
+const seoDescription =
+  'Senior Software Engineer with 10+ years of experience in ' +
+  'Node.js, TypeScript, Golang, Kubernetes, and blockchain, ' +
+  'building scalable cloud-native systems.';
+
 export const metadata: Metadata = {
-  title: 'Osoian Marcel — Software Engineer',
-  description: 'Curriculum vitae of Osoian Marcel (Software Engineer)',
+  title: 'Osoian Marcel — Software Engineer | CV & Portfolio',
+  description: seoDescription,
   authors: [{ name: 'Osoian Marcel' }],
+  keywords: [
+    'Software Engineer',
+    'Node.js Developer',
+    'TypeScript',
+    'Kubernetes',
+    'Blockchain Developer',
+    'Full Stack Engineer',
+    'Tech Lead',
+    'DevOps',
+    'Microservices',
+  ],
   viewport: {
     width: 'device-width',
     initialScale: 1
@@ -23,21 +39,39 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  },
   openGraph: {
-    type: 'website',
-    title: 'Osoian Marcel — Software Engineer',
-    description: 'Curriculum vitae of Osoian Marcel (Software Engineer)',
-    siteName: 'Curriculum vitae of Osoian Marcel',
-    locale: 'en',
+    type: 'profile',
+    title: 'Osoian Marcel — Software Engineer | CV & Portfolio',
+    description: seoDescription,
+    siteName: 'Osoian Marcel - Software Engineer',
+    locale: 'en_US',
     url: SITE_URL,
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Curriculum vitae of Osoian Marcel'
+        alt: 'Osoian Marcel - Software Engineer CV'
       }
     ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Osoian Marcel — Software Engineer',
+    description: seoDescription,
+    creator: '@OsoianMarcel',
+    images: [`${SITE_URL}/og-image.png`]
   }
 };
 
