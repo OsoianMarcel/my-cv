@@ -5,6 +5,6 @@ type Props = {
   name: string;
 };
 
-export default function Title({ name }: Props): ReactElement {
+export default function SubTitle({ name }: Props): ReactElement {
   return <h4 className={styles.title}>{name}</h4>;
 }

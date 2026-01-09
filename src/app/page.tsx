@@ -1,5 +1,4 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { Metadata } from 'next';
 import styles from './page.module.scss';
 
 import NoSSR from '../components/NoSSR';
@@ -9,43 +8,42 @@ import AsideDetail from '../components/AsideDetail';
 import ProgressBar from '../components/ProgressBar';
 import EmploymentItem from '../components/Employment/EmploymentItem';
 import Skills from '../components/Skills/Skills';
-import content from '../configs/content';
+import content from '../data/content';
 
-const Home: NextPage = () => {
-  const title = 'Osoian Marcel — Software Engineer';
-  const description = 'Curriculum vitae of Osoian Marcel (Software Engineer)';
+const SITE_URL = 'https://marcel.osoian.com';
 
+export const metadata: Metadata = {
+  title: 'Osoian Marcel — Software Engineer',
+  description: 'Curriculum vitae of Osoian Marcel (Software Engineer)',
+  authors: [{ name: 'Osoian Marcel' }],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1
+  },
+  alternates: {
+    canonical: SITE_URL
+  },
+  openGraph: {
+    type: 'website',
+    title: 'Osoian Marcel — Software Engineer',
+    description: 'Curriculum vitae of Osoian Marcel (Software Engineer)',
+    siteName: 'Curriculum vitae of Osoian Marcel',
+    locale: 'en',
+    url: SITE_URL,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Curriculum vitae of Osoian Marcel'
+      }
+    ]
+  }
+};
+
+export default function Home() {
   return (
     <Layout>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="author" content="Osoian Marcel" />
-
-        <link rel="canonical" href="https://marcel.osoian.com" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta
-          property="og:site_name"
-          content="Curriculum vitae of Osoian Marcel"
-        />
-        <meta property="og:locale" content="en" />
-        <meta property="og:url" content="https://marcel.osoian.com" />
-        <meta
-          property="og:image"
-          content="https://marcel.osoian.com/og-image.png"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-          property="og:image:alt"
-          content="Curriculum vitae of Osoian Marcel"
-        />
-      </Head>
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -53,8 +51,8 @@ const Home: NextPage = () => {
             '@context': 'https://schema.org/',
             '@type': 'Person',
             name: 'Osoian Marcel',
-            url: 'https://marcel.osoian.com',
-            image: 'https://marcel.osoian.com/photo-of-me.jpg',
+            url: SITE_URL,
+            image: `${SITE_URL}/photo-of-me.jpg`,
             sameAs: [
               'https://github.com/OsoianMarcel',
               'https://www.linkedin.com/in/osoian-marcel/',
@@ -84,7 +82,12 @@ const Home: NextPage = () => {
 
             <AsideDetail title="Github">
               <p>
-                <a href={content.github.url} target="_blank" rel="noreferrer">
+                <a
+                  href={content.github.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub profile (opens in new tab)"
+                >
                   {content.github.label}
                 </a>
               </p>
@@ -95,7 +98,10 @@ const Home: NextPage = () => {
             {content.skills.map((skill, idx) => (
               <div className={styles.skill_section} key={idx}>
                 <div className={styles.skill_name}>{skill.name}</div>
-                <ProgressBar val={skill.progress} />
+                <ProgressBar
+                  val={skill.progress}
+                  label={`${skill.name} skill level`}
+                />
                 <ul className={styles.skill_list}>
                   {skill.items.map((item, i) => (
                     <li key={i}>{item}</li>
@@ -135,7 +141,7 @@ const Home: NextPage = () => {
                     </li>
                   ))}
                 </ul>
-                <Skills skills={job.skills} />
+                {job.skills && <Skills skills={job.skills} />}
               </EmploymentItem>
             ))}
           </Section>
@@ -163,6 +169,4 @@ const Home: NextPage = () => {
       </main>
     </Layout>
   );
-};
-
-export default Home;
+}

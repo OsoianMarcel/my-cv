@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 const useDetectPrint = (): boolean => {
   const [isPrinting, setIsPrinting] = useState(false);
 
-  const handleBeforeprint = () => setIsPrinting(true);
-  const handleAfterprint = () => setIsPrinting(false);
-
   useEffect(() => {
+    const handleBeforeprint = () => setIsPrinting(true);
+    const handleAfterprint = () => setIsPrinting(false);
+
     window.addEventListener('beforeprint', handleBeforeprint);
     window.addEventListener('afterprint', handleAfterprint);
 
@@ -14,7 +14,7 @@ const useDetectPrint = (): boolean => {
       window.removeEventListener('beforeprint', handleBeforeprint);
       window.removeEventListener('afterprint', handleAfterprint);
     };
-  });
+  }, []);
 
   return isPrinting;
 };

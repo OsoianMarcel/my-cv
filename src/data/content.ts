@@ -1,4 +1,6 @@
-const content = {
+import type { Content } from '@/types/content';
+
+const content: Content = {
   address: 'Chisinau,\nRepublic of Moldova',
   email: 'marcel@osoian.com',
   github: {

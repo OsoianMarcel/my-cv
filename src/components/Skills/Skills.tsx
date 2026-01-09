@@ -5,12 +5,17 @@ import useDetectPrint from '@/hooks/useDetectPrint';
 
 import styles from './Skills.module.scss';
 
+const DEFAULT_SKILLS_LIMIT = 10;
+
 type Props = {
   skills: string[];
   limit?: number;
 };
 
-export default function Skill({ skills, limit = 10 }: Props): ReactElement {
+export default function Skill({
+  skills,
+  limit = DEFAULT_SKILLS_LIMIT
+}: Props): ReactElement {
   const [showAll, setShowAll] = useState(false);
   const isPrinting = useDetectPrint();
 
@@ -31,7 +36,12 @@ export default function Skill({ skills, limit = 10 }: Props): ReactElement {
         );
       })}
       {skills.length > limit && !isPrinting && (
-        <button onClick={onClick} className={styles.btn}>
+        <button
+          onClick={onClick}
+          className={styles.btn}
+          aria-label={showAll ? 'Show less skills' : 'Show more skills'}
+          aria-expanded={showAll}
+        >
           {showAll ? '<less' : 'more>'}
         </button>
       )}

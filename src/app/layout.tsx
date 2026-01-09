@@ -5,14 +5,9 @@ import './globals.scss';
 
 const montserratFont = Montserrat({
   variable: '--font-montserrat',
-  weight: ['400', '500', '600'],
+  weight: ['400', '600'],
   subsets: ['latin']
 });
-
-export const metadata: Metadata = {
-  title: 'Osoian Marcel — Software Engineer',
-  description: 'Curriculum vitae of Osoian Marcel (Software Engineer)'
-};
 
 export default function RootLayout({
   children
