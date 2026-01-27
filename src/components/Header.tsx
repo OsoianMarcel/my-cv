@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import ThemeToggle from './ThemeToggle';
 import styles from './Header.module.scss';
+import content from '../data/content';
 
 export default function Header(): ReactElement {
   return (
@@ -11,7 +12,7 @@ export default function Header(): ReactElement {
           <br />
           Marcel
         </h1>
-        <h2 className={styles.occupation}>Software Engineer</h2>
+        <h2 className={styles.occupation}>{content.headline}</h2>
       </div>
       <div className={styles.right}>
         <ThemeToggle />

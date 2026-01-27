@@ -24,6 +24,7 @@ export interface GitHubLink {
 }
 
 export interface Content {
+  headline: string;
   address: string;
   email: string;
   github: GitHubLink;

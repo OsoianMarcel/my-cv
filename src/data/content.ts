@@ -1,6 +1,7 @@
 import type { Content } from '@/types/content';
 
 const content: Content = {
+  headline: 'Software Engineer',
   address: 'Chisinau,\nRepublic of Moldova',
   email: 'marcel@osoian.com',
   github: {
