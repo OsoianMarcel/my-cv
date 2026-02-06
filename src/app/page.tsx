@@ -126,6 +126,19 @@ export default function Home() {
                 </a>
               </p>
             </AsideDetail>
+
+            <AsideDetail title="LinkedIn">
+              <p>
+                <a
+                  href={content.linkedIn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn profile (opens in new tab)"
+                >
+                  {content.linkedIn.label}
+                </a>
+              </p>
+            </AsideDetail>
           </Section>
 
           <Section title="Skills">

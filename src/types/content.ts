@@ -23,10 +23,16 @@ export interface GitHubLink {
   label: string;
 }
 
+export interface LinkedInLink {
+  url: string;
+  label: string;
+}
+
 export interface Content {
   headline: string;
   address: string;
   email: string;
+  linkedIn: LinkedInLink;
   github: GitHubLink;
   skills: Skill[];
   languages: Language[];

@@ -20,6 +20,7 @@ printHelp() {
   echo -e "dev:npm\t\t\tNPM package manager"
   echo -e "dev:service:recreate\tRecreates the service"
   echo -e "prod\t\t\tProd docker compose"
+  echo -e "prod:deploy\t\tBuilds and deploys to production"
 }
 
 case $farg in

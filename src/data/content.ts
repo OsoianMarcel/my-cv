@@ -8,6 +8,10 @@ const content: Content = {
     url: 'https://github.com/OsoianMarcel?tab=repositories',
     label: 'github.com/OsoianMarcel'
   },
+  linkedIn: {
+    url: 'https://www.linkedin.com/in/osoian-marcel/',
+    label: 'linkedin.com/in/osoian-marcel'
+  },
   skills: [
     {
       name: 'BackEnd',
