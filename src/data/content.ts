@@ -74,15 +74,15 @@ const content: Content = {
     'Software Engineer with over 10 years of experience building web systems and APIs. Strong background in Node.js, TypeScript, and cloud-native development using Kubernetes. Built and maintained distributed microservices, integrated third-party APIs, and designed scalable backend systems. 4 years of hands-on experience with Ethereum blockchain, smart contracts, and Web3 tools. Comfortable working across the stack and handling infrastructure when needed.',
   employmentHistory: [
     {
-      position: 'Independent Study & Engineering Sabbatical',
+      position: 'Independent Study & Freelancing',
       company: 'Self-Directed',
       periodFrom: 'Jun 2025',
-      periodTo: 'Dec 2025',
+      periodTo: 'Jan 2026',
       responsibilities: [
-        'Took a planned career sabbatical focused on professional development and technical upskilling.',
+        'Took a planned career sabbatical focused on professional development, selective freelancing, and technical upskilling.',
         'Completed an in-depth study of Golang, including language internals, idiomatic patterns, concurrency models, and clean architecture principles.',
         'Studied and applied concepts from key technical literature: Effective Go, Concurrency in Go, Clean Architecture, and The Little Go Book.',
-        'Designed and implemented multiple Go-based pet projects following Clean Architecture, with emphasis on maintainability, testability, and idiomatic code.',
+        'Designed and implemented multiple Go-based personal and freelance projects following Clean Architecture, with emphasis on maintainability, testability, and idiomatic code.',
         'Gained hands-on experience with Go concurrency patterns (goroutines, channels, worker pools, context propagation).',
         'Built and operated a home bare-metal infrastructure using Proxmox and a self-managed Kubernetes cluster.',
         'Deepened practical knowledge of container orchestration, networking, storage, and cluster operations in a real-world environment.'
@@ -97,6 +97,7 @@ const content: Content = {
         'Linux',
         'Distributed Systems',
         'System Design',
+        'Freelancing',
         'Self-Directed Learning'
       ]
     },
